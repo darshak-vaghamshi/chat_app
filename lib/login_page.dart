@@ -93,8 +93,6 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 20,
             ),
-            // MaterialButtonBar(labelText: "Login", Button: Chat()),
-            // MaterialButtonBar(Button:  ChatPage(), labelText: 'Login'),
             MaterialButtonBar(
               labelText: "Login",
               onTab: () {
@@ -107,72 +105,13 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   );
                 } else {
-                  // ScaffoldMessenger.of(context)
-                  // .showSnackBar(
-                  // const SnackBar(
-                  // content: Text("Login Successful"),
-                  // backgroundColor: Colors.deepPurple,
-                  // ),
-                  // )
-                  // .closed
-                  // .then(
-                  // (value) =>
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (_) => ChatPage()),
                   );
-                  // );
                 }
               },
             ),
-            // Padding(
-            // padding: const EdgeInsets.all(8.0),
-            // child: Row(
-            // mainAxisAlignment: MainAxisAlignment.end,
-            // children: [
-            // MaterialButton(
-            // onPressed: () {
-            // if (usernameController.text == "" ||
-            // passwordController.text == "") {
-            // ScaffoldMessenger.of(context).showSnackBar(
-            // const SnackBar(
-            // content: Text("Required *"),
-            // backgroundColor: Colors.deepPurple,
-            // ),
-            // );
-            // } else {
-            // ScaffoldMessenger.of(context)
-            // .showSnackBar(
-            // const SnackBar(
-            // content: Text("Login Successful"),
-            // backgroundColor: Colors.deepPurple,
-            // ),
-            // )
-            // .closed
-            // .then(
-            // (value) =>
-            // Navigator.push(
-            // context,
-            // MaterialPageRoute(builder: (_) => const ChatPage()),
-            // );
-            // );
-            // }
-            // },
-            // shape: OutlineInputBorder(
-            // borderRadius: BorderRadius.circular(14),
-            // borderSide: BorderSide.none,
-            // ),
-            // color: Colors.deepPurple,
-            // child: const Text(
-            // "Login",
-            // style: TextStyle(
-            // color: Colors.white,
-            // ),
-            // ),
-            // ),
-            // ],
-            // ),
-            // ),
           ],
         ),
       ),

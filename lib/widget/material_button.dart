@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import '../home_page.dart';
 
 class MaterialButtonBar extends StatelessWidget {
-  MaterialButtonBar({super.key, required this.onTab, required this.labelText});
+  MaterialButtonBar({super.key, required this.labelText, required this.onTab});
 
   final Function() onTab;
   final String labelText;

@@ -92,33 +92,9 @@ class _SignPageState extends State<SignPage> {
             const SizedBox(
               height: 20,
             ),
-            MaterialButtonBar(onTab:    () {
-     if (usernameController.text == "" ||
-         emailController.text == "" ||
-         phonedController.text == "" ||
-         passwordController.text == "" ||
-         genderController.text == "") {
-       ScaffoldMessenger.of(context).showSnackBar(
-         const SnackBar(
-           content: Text("Required *"),
-           backgroundColor: Colors.deepPurple,
-         ),
-       );
-     } else {
-       Navigator.push(
-         context,
-         MaterialPageRoute(
-           builder: (context) => const LoginPage(),
-         ),
-       );
-     }
-   },
- ),
- labelText: "Sign Up",)
             MaterialButtonBar(
               labelText: "Sign Up",
-              onTab: 
-              () {
+              onTab: () {
                 if (usernameController.text == "" ||
                     emailController.text == "" ||
                     phonedController.text == "" ||
@@ -140,59 +116,6 @@ class _SignPageState extends State<SignPage> {
                 }
               },
             ),
-            // Padding(
-            // padding: const EdgeInsets.all(8.0),
-            // child: Row(
-            // mainAxisAlignment: MainAxisAlignment.end,
-            // children: [
-            // MaterialButton(
-            // onPressed:
-            // () {
-            // if (usernameController.text == "" ||
-            // emailController.text == "" ||
-            // phonedController.text == "" ||
-            // passwordController.text == "" ||
-            // genderController.text == "") {
-            // ScaffoldMessenger.of(context).showSnackBar(
-            // const SnackBar(
-            // content: Text("Required *"),
-            // backgroundColor: Colors.deepPurple,
-            // ),
-            // );
-            // } else {
-            // ScaffoldMessenger.of(context)
-            // .showSnackBar(
-            // const SnackBar(
-            // content: Text("Sign Up Successful"),
-            // backgroundColor: Colors.deepPurple,
-            // ),
-            // )
-            // .closed
-            // .then(
-            // (value) => Navigator.push(
-            // context,
-            // MaterialPageRoute(
-            // builder: (context) => const LoginPage(),
-            // ),
-            // ),
-            // );
-            // }
-            // },
-            // shape: OutlineInputBorder(
-            // borderRadius: BorderRadius.circular(14),
-            // borderSide: BorderSide.none,
-            // ),
-            // color: Colors.deepPurple,
-            // child: const Text(
-            // "Sign Up",
-            // style: TextStyle(
-            // color: Colors.white,
-            // ),
-            // ),
-            // ),
-            // ],
-            // ),
-            // ),
           ],
         ),
       ),
