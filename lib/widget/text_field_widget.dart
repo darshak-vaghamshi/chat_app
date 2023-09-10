@@ -9,7 +9,8 @@ class TextFieldWidget extends StatelessWidget {
       required this.icon,
       required this.onTap,
       this.obscureText,
-      this.keyboardType});
+      this.keyboardType
+      });
   final TextEditingController controller;
   final String? hintText;
   final String labelText;
@@ -20,7 +21,8 @@ class TextFieldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
+    return 
+    TextFormField(
       controller: controller,
       obscureText: obscureText ?? false,
       keyboardType: keyboardType,

@@ -89,7 +89,8 @@ class _ChatPageState extends State<ChatPage> {
     ];
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
-      child: Column(
+      child: 
+      Column(
         children: [
           SafeArea(
             child: Padding(
